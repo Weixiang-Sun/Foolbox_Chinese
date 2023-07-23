@@ -1,5 +1,5 @@
 # Foolbox_Chinese
-
+Foolbox is a Python library that lets you easily run adversarial attacks against machine learning models like deep neural networks. It is built on top of EagerPy and works natively with models in PyTorch, TensorFlow, and JAX. The official document is hard to comprehend. So here I share the Chinese version summary by myself. If there are any wrong description, please pull Issues.
 | 文件 | 功能 | 概述 |
 | --- | --- | --- |
 | `devutils.py `| 包含一些实用函数，如展平张量和扩展张量维度 | `flatten(x: ep.Tensor, keep: int = 1) -> ep.Tensor`：将一个张量`x`展平成一维。可以通过`keep`参数指定从哪个维度开始展平，默认为1。<br/> `atleast_kd(x: ep.Tensor, k: int) -> ep.Tensor`：将一个张量`x`至少扩展到`k`维。通过在维度元组中添加适当数量的1来实现。返回扩展后的张量。 |
